@@ -10,9 +10,6 @@ Version:	1.2
 Release:	3
 License:	MIT
 Group:		X11/Applications/Graphics
-Group(de):	X11/Applikationen/Grafik
-Group(pl):	X11/Aplikacje/Grafika
-Group(pt):	X11/Aplicações/Gráficos
 Source0:	ftp://sunsite.unc.edu/pub/Linux/apps/math/fractals/%{name}-%{version}.tar.gz
 Patch0:		%{name}-imake.patch
 Patch1:		%{name}-glibc.patch
