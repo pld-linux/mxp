@@ -10,7 +10,7 @@ Group:		X11/Applications/Graphics
 Source:		ftp://sunsite.unc.edu/apps/math/fractals/mxp-1.0.tgz
 Patch0:		mxp-imake.patch
 Patch1:		mxp-glibc.patch
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This is a very fast Mandelbrot set generator for X Windows. It lets you
