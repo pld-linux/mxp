@@ -1,16 +1,16 @@
-Name: mxp
-Version: 1.0
-Release: 11
-Copyright: MIT
-Group: X11/Applications/Graphics
-Summary: X11 Mandelbrot set generator and explorer
-Source: ftp://sunsite.unc.edu/apps/math/fractals/mxp-1.0.tgz
-Patch: mxp-1.0-imake.patch
-Patch1: mxp-1.0-glibc.patch
+Summary:	X11 Mandelbrot set generator and explorer
+Summary(de):	X11 Mandelbrot-Setgenerator und Explorer 
+Summary(fr):	Générateur et explorateur X11 d'ensembles de Mandelbrot
+Summary(tr):	Mandelbrot kümesi üretici ve tarayýcý
+Name:		mxp
+Version:	1.0
+Release:	11
+Copyright:	MIT
+Group:		X11/Applications/Graphics
+Source:		ftp://sunsite.unc.edu/apps/math/fractals/mxp-1.0.tgz
+Patch0:		mxp-imake.patch
+Patch1:		mxp-glibc.patch
 BuildRoot:	/tmp/%{name}-%{version}-root
-Summary(de): X11 Mandelbrot-Setgenerator und Explorer 
-Summary(fr): Générateur et explorateur X11 d'ensembles de Mandelbrot
-Summary(tr): Mandelbrot kümesi üretici ve tarayýcý
 
 %description
 This is a very fast Mandelbrot set generator for X Windows. It lets you
@@ -29,7 +29,7 @@ denetlenmesine olanak saðlar.
 
 %prep
 %setup -q -n mxp
-%patch -p1
+%patch0 -p1
 %patch1 -p1
 
 %build
@@ -40,10 +40,12 @@ make
 rm -rf $RPM_BUILD_ROOT
 make DESTDIR=$RPM_BUILD_ROOT install
 
+gzip -9nf README
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root)
-%doc README
-/usr/X11R6/bin/mxp
+%defattr(644,root,root,755)
+%doc README.gz
+%attr(755,root,root) /usr/X11R6/bin/mxp
