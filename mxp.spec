@@ -1,33 +1,43 @@
 Summary:	X11 Mandelbrot set generator and explorer
 Summary(de):	X11 Mandelbrot-Setgenerator und Explorer 
 Summary(fr):	Générateur et explorateur X11 d'ensembles de Mandelbrot
+Summary(pl):	Generator i przegl±darka zbioru Mandelbrota
 Summary(tr):	Mandelbrot kümesi üretici ve tarayýcý
 Name:		mxp
-Version:	1.0
-Release:	11
-Copyright:	MIT
+Version:	1.2
+Release:	3
+License:	MIT
 Group:		X11/Applications/Graphics
+Group(de):	X11/Applikationen/Grafik
 Group(pl):	X11/Aplikacje/Grafika
-Source0:	ftp://sunsite.unc.edu/apps/math/fractals/%{name}-%{version}.tgz
-Patch0:		mxp-imake.patch
-Patch1:		mxp-glibc.patch
+Group(pt):	X11/Aplicações/Gráficos
+Source0:	ftp://sunsite.unc.edu/pub/Linux/apps/math/fractals/%{name}-%{version}.tar.gz
+Patch0:		%{name}-imake.patch
+Patch1:		%{name}-glibc.patch
+BuildRequires:	XFree86-devel
+BuildRequires:	Xaw3d-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
 %define		_mandir		%{_prefix}/man
 
 %description
-This is a very fast Mandelbrot set generator for X Windows. It lets
-you select regions to zoom in on and allows you to control other
+This is a very fast Mandelbrot set generator for X Window System. It
+lets you select regions to zoom in on and allows you to control other
 aspects of fractal generation.
 
 %description -l de
-Dies ist ein sehr schneller Mandelbrot-Mengengenerator für X-Windows.
+Dies ist ein sehr schneller Mandelbrot-Mengengenerator für X-Window.
 Sie Zoom-Bereiche auswählen und andere Parameter der Fraktalerzeugung
 einstellen.
 
+%description -l pl
+To jest bardzo szybki generator zbioru Mandelbrota pod X Window
+System. Pozwala na zaznaczenie obszarów do powiêkszenia i kontrolê
+innych aspektów generowania fraktala.
+
 %description -l tr
-X Windows ortamýnda çalýþan, güçlü bir Mandelbrot kümesi üreticisidir.
+X Window ortamýnda çalýþan, güçlü bir Mandelbrot kümesi üreticisidir.
 Büyütmek için bölge seçilebilmesine ve fraktal oluþturmanýn
 özelliklerinin denetlenmesine olanak saðlar.
 
@@ -38,7 +48,7 @@ Büyütmek için bölge seçilebilmesine ve fraktal oluþturmanýn
 
 %build
 xmkmf
-%{__make}
+%{__make} OPT="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
