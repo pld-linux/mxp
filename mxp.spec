@@ -11,6 +11,7 @@ Release:	3
 License:	MIT
 Group:		X11/Applications/Graphics
 Source0:	ftp://sunsite.unc.edu/pub/Linux/apps/math/fractals/%{name}-%{version}.tar.gz
+# Source0-md5:	93226aaf5b3f8e4658377568c9321e6e
 Patch0:		%{name}-imake.patch
 Patch1:		%{name}-glibc.patch
 BuildRequires:	XFree86-devel
