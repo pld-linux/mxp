@@ -47,16 +47,3 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 %doc README
 /usr/X11R6/bin/mxp
-
-%changelog
-* Sun Aug 16 1998 Jeff Johnson <jbj@redhat.com>
-- build root
-
-* Thu May 07 1998 Prospector System <bugs@redhat.com>
-- translations modified for de, fr, tr
-
-* Wed Oct 21 1997 Cristian Gafton <gafton@redhat.com>
-- updated the source url
-
-* Mon Jul 21 1997 Erik Troan <ewt@redhat.com>
-- built against glibc
