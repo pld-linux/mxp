@@ -7,7 +7,7 @@ Summary: X11 Mandelbrot set generator and explorer
 Source: ftp://sunsite.unc.edu/apps/math/fractals/mxp-1.0.tgz
 Patch: mxp-1.0-imake.patch
 Patch1: mxp-1.0-glibc.patch
-BuildRoot: /var/tmp/mxp-root
+BuildRoot:	/tmp/%{name}-%{version}-root
 Summary(de): X11 Mandelbrot-Setgenerator und Explorer 
 Summary(fr): Générateur et explorateur X11 d'ensembles de Mandelbrot
 Summary(tr): Mandelbrot kümesi üretici ve tarayýcý
