@@ -38,7 +38,7 @@ Büyütmek için bölge seçilebilmesine ve fraktal oluþturmanýn
 
 %build
 xmkmf
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
