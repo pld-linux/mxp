@@ -1,7 +1,9 @@
 Summary:	X11 Mandelbrot set generator and explorer
 Summary(de):	X11 Mandelbrot-Setgenerator und Explorer 
+Summary(es):	Explorador y creador de conjuntos de Mandelbrot para X11
 Summary(fr):	Générateur et explorateur X11 d'ensembles de Mandelbrot
 Summary(pl):	Generator i przegl±darka zbioru Mandelbrota
+Summary(pt_BR):	Explorador e gerador de conjuntos de Mandelbrot para X11
 Summary(tr):	Mandelbrot kümesi üretici ve tarayýcý
 Name:		mxp
 Version:	1.2
@@ -31,10 +33,20 @@ Dies ist ein sehr schneller Mandelbrot-Mengengenerator für X-Window.
 Sie Zoom-Bereiche auswählen und andere Parameter der Fraktalerzeugung
 einstellen.
 
+%description -l es
+Este es un rápido conjunto creador Mandelbrot para X Window. Deja que
+selecciones regiones para zoom y te permite controlar otros aspectos
+de generación fractal.
+
 %description -l pl
 To jest bardzo szybki generator zbioru Mandelbrota pod X Window
 System. Pozwala na zaznaczenie obszarów do powiêkszenia i kontrolê
 innych aspektów generowania fraktala.
+
+%description -l pt_BR
+Este é um rápido conjunto gerador Mandelbrot para X Window. Ele deixa
+você selecionar regiões para zoom e permite você controlar outros
+aspectos de geração fractal.
 
 %description -l tr
 X Window ortamýnda çalýþan, güçlü bir Mandelbrot kümesi üreticisidir.
