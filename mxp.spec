@@ -17,8 +17,6 @@ BuildRequires:	XFree86-devel
 BuildRequires:	Xaw3d-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
-%define		_mandir		%{_prefix}/man
 
 %description
 This is a very fast Mandelbrot set generator for X Window System. It
