@@ -1,5 +1,5 @@
 Summary:	X11 Mandelbrot set generator and explorer
-Summary(de):	X11 Mandelbrot-Setgenerator und Explorer 
+Summary(de):	X11 Mandelbrot-Setgenerator und Explorer
 Summary(es):	Explorador y creador de conjuntos de Mandelbrot para X11
 Summary(fr):	Générateur et explorateur X11 d'ensembles de Mandelbrot
 Summary(pl):	Generator i przegl±darka zbioru Mandelbrota
