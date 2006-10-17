@@ -7,15 +7,16 @@ Summary(pt_BR):	Explorador e gerador de conjuntos de Mandelbrot para X11
 Summary(tr):	Mandelbrot kümesi üretici ve tarayýcý
 Name:		mxp
 Version:	1.3
-Release:	1
+Release:	2
 License:	MIT
 Group:		X11/Applications/Graphics
 Source0:	ftp://sunsite.unc.edu/pub/Linux/apps/math/fractals/%{name}-%{version}.tar.gz
 # Source0-md5:	c53f8b91fcbb09c4ad885bb7c34d2dd0
 Patch0:		%{name}-imake.patch
 Patch1:		%{name}-glibc.patch
-BuildRequires:	XFree86-devel
 BuildRequires:	Xaw3d-devel
+BuildRequires:	xorg-cf-files
+BuildRequires:	xorg-util-imake
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -57,7 +58,8 @@ Büyütmek için bölge seçilebilmesine ve fraktal oluþturmanýn
 xmkmf
 %{__make} \
 	CC="%{__cc}" \
-	CDEBUGFLAGS="%{rpmcflags}"
+	CDEBUGFLAGS="%{rpmcflags}" \
+	LOCAL_LDFLAGS="%{rpmldflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
