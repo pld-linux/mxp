@@ -1,10 +1,10 @@
 Summary:	X11 Mandelbrot set generator and explorer
-Summary(de):	X11 Mandelbrot-Setgenerator und Explorer
-Summary(es):	Explorador y creador de conjuntos de Mandelbrot para X11
-Summary(fr):	Générateur et explorateur X11 d'ensembles de Mandelbrot
-Summary(pl):	Generator i przegl±darka zbioru Mandelbrota
-Summary(pt_BR):	Explorador e gerador de conjuntos de Mandelbrot para X11
-Summary(tr):	Mandelbrot kümesi üretici ve tarayıcı
+Summary(de.UTF-8):   X11 Mandelbrot-Setgenerator und Explorer
+Summary(es.UTF-8):   Explorador y creador de conjuntos de Mandelbrot para X11
+Summary(fr.UTF-8):   GÃ©nÃ©rateur et explorateur X11 d'ensembles de Mandelbrot
+Summary(pl.UTF-8):   Generator i przeglÄ…darka zbioru Mandelbrota
+Summary(pt_BR.UTF-8):   Explorador e gerador de conjuntos de Mandelbrot para X11
+Summary(tr.UTF-8):   Mandelbrot kÃ¼mesi Ã¼retici ve tarayÄ±cÄ±
 Name:		mxp
 Version:	1.3
 Release:	2
@@ -24,30 +24,30 @@ This is a very fast Mandelbrot set generator for X Window System. It
 lets you select regions to zoom in on and allows you to control other
 aspects of fractal generation.
 
-%description -l de
-Dies ist ein sehr schneller Mandelbrot-Mengengenerator für X-Window.
-Sie Zoom-Bereiche auswählen und andere Parameter der Fraktalerzeugung
+%description -l de.UTF-8
+Dies ist ein sehr schneller Mandelbrot-Mengengenerator fÃ¼r X-Window.
+Sie Zoom-Bereiche auswÃ¤hlen und andere Parameter der Fraktalerzeugung
 einstellen.
 
-%description -l es
-Este es un rápido conjunto creador Mandelbrot para X Window. Deja que
+%description -l es.UTF-8
+Este es un rÃ¡pido conjunto creador Mandelbrot para X Window. Deja que
 selecciones regiones para zoom y te permite controlar otros aspectos
-de generación fractal.
+de generaciÃ³n fractal.
 
-%description -l pl
+%description -l pl.UTF-8
 To jest bardzo szybki generator zbioru Mandelbrota pod X Window
-System. Pozwala na zaznaczenie obszarów do powiêkszenia i kontrolê
-innych aspektów generowania fraktala.
+System. Pozwala na zaznaczenie obszarÃ³w do powiÄ™kszenia i kontrolÄ™
+innych aspektÃ³w generowania fraktala.
 
-%description -l pt_BR
-Este é um rápido conjunto gerador Mandelbrot para X Window. Ele deixa
-você selecionar regiões para zoom e permite você controlar outros
-aspectos de geração fractal.
+%description -l pt_BR.UTF-8
+Este Ã© um rÃ¡pido conjunto gerador Mandelbrot para X Window. Ele deixa
+vocÃª selecionar regiÃµes para zoom e permite vocÃª controlar outros
+aspectos de geraÃ§Ã£o fractal.
 
-%description -l tr
-X Window ortamında çalışan, güçlü bir Mandelbrot kümesi üreticisidir.
-Büyütmek için bölge seçilebilmesine ve fraktal oluşturmanın
-özelliklerinin denetlenmesine olanak sağlar.
+%description -l tr.UTF-8
+X Window ortamÄ±nda Ã§alÄ±ÅŸan, gÃ¼Ã§lÃ¼ bir Mandelbrot kÃ¼mesi Ã¼reticisidir.
+BÃ¼yÃ¼tmek iÃ§in bÃ¶lge seÃ§ilebilmesine ve fraktal oluÅŸturmanÄ±n
+Ã¶zelliklerinin denetlenmesine olanak saÄŸlar.
 
 %prep
 %setup -q -n mxp
