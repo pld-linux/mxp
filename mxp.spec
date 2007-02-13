@@ -1,10 +1,10 @@
 Summary:	X11 Mandelbrot set generator and explorer
-Summary(de.UTF-8):   X11 Mandelbrot-Setgenerator und Explorer
-Summary(es.UTF-8):   Explorador y creador de conjuntos de Mandelbrot para X11
-Summary(fr.UTF-8):   Générateur et explorateur X11 d'ensembles de Mandelbrot
-Summary(pl.UTF-8):   Generator i przeglądarka zbioru Mandelbrota
-Summary(pt_BR.UTF-8):   Explorador e gerador de conjuntos de Mandelbrot para X11
-Summary(tr.UTF-8):   Mandelbrot kümesi üretici ve tarayıcı
+Summary(de.UTF-8):	X11 Mandelbrot-Setgenerator und Explorer
+Summary(es.UTF-8):	Explorador y creador de conjuntos de Mandelbrot para X11
+Summary(fr.UTF-8):	Générateur et explorateur X11 d'ensembles de Mandelbrot
+Summary(pl.UTF-8):	Generator i przeglądarka zbioru Mandelbrota
+Summary(pt_BR.UTF-8):	Explorador e gerador de conjuntos de Mandelbrot para X11
+Summary(tr.UTF-8):	Mandelbrot kümesi üretici ve tarayıcı
 Name:		mxp
 Version:	1.3
 Release:	2
