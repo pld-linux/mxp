@@ -51,8 +51,8 @@ Büyütmek için bölge seçilebilmesine ve fraktal oluşturmanın
 
 %prep
 %setup -q -n mxp
-%patch0 -p1
-%patch1 -p1
+%patch -P0 -p1
+%patch -P1 -p1
 
 %build
 xmkmf
